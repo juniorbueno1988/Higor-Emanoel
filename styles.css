@@ -49,6 +49,11 @@ h1 {
     font-weight: 700;
 }
 
+.container__secundario {
+    max-width: 100%;
+    overflow: hidden;
+}
+
 .imagem__fundo {
     margin-left: 120%;
     margin-top: -60%;
@@ -168,53 +173,4 @@ h1 {
 .container__botao:hover {
     background-color: var(--botao-azul-efeito);
     color: var(--cor-de-fundo);
-}
-
-@media only screen and (max-width: 600px) {
-    .container__caixa {
-        padding: 10px;
-    }
-
-    .container__titulo {
-        font-size: 18px;
-    }
-
-    .imagem__fundo {
-        display: none; 
-    }
-
-    .container__secundario {
-        width: 100%;
-        height: auto;
-    }
-
-    .descricao__titulo {
-        font-size: 18px;
-    }
-
-    .descricao__texto {
-        font-size: 14px;
-    }
-
-    .secundario__imagem {
-        width: 100%;
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .dispositivos__titulo {
-        font-size: 18px;
-    }
-
-    .lista__item {
-        font-size: 14px;
-    }
-
-    .redes__titulo {
-        font-size: 18px;
-    }
-
-    .fab {
-        font-size: 24px;
-    }
 }
