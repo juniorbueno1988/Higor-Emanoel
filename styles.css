@@ -175,30 +175,16 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .container {
         grid-template-columns: 100%;
     }
 
     .container__caixa {
         margin: 0;
-    }
-
-    .container__descricao {
-        order: 1;
-        position: relative;
-        padding: 0;
-        width: 100%;
-        max-width: none;
-    }
-
-    .container__descricao h1,
-    .container__descricao p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        color: #FFFFFF;
     }
 
     .container__imagem {
@@ -249,6 +235,7 @@ h1 {
         text-align: center;
         color: #FFFFFF;
         padding: 0 10px;
+        margin-bottom: 20px;
     }
 
     .container__descricao>* {
@@ -259,8 +246,11 @@ h1 {
         margin: 0 auto;
     }
 
-    .container__descricao h1,
+    .container__descricao h2 {
+        margin-bottom: 15px;
+    }
+
     .container__descricao p {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 }
